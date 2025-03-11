@@ -1,0 +1,57 @@
+/* Apply background image */
+body {
+    background-image: url('images/background.jpg'); /* Replace with actual background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(248, 54, 54, 0.7);
+    padding: 25px;
+    font-size: 30px;
+}
+
+/* Notice Board Styling */
+#notice-board {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgb(39, 39, 37);
+    color: rgb(70, 42, 42);
+    padding: 20px 0;
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Photo Bank Styling */
+#photo-bank {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+#gallery img {
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+}
